@@ -1,8 +1,8 @@
 //SLIDESHOW
 let imagens = [
-    'src/assets/imagem1.jpg',
-    'src/assets/ilustração.jpg',
-    'src/assets/impacto.jpg',
+    'src/assets/logo2.jpg',
+    'src/assets/enchente2.jpg',
+    'src/assets/impacto2.jpg',
 ];
 
 let index = 0;
