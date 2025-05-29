@@ -1,3 +1,4 @@
+//SLIDESHOW
 let imagens = [
     'src/assets/imagem1.jpg',
     'src/assets/ilustração.jpg',
@@ -16,3 +17,19 @@ function slideShow() {
     setTimeout("slideShow()", tempo)
 }
 slideShow();
+
+//MENU HANBURGUER
+const hamburguer = document.querySelector('.hamburguer');
+const headerMenu = document.querySelector('header nav');
+
+function toggleMenu(){
+    hamburguer.classList.toggle('active');
+    headerMenu.classList.toggle('active');
+}
+
+hamburguer.addEventListener('click', toggleMenu);
+headerMenu.addEventListener('click', (e) => {
+    if (e.target.classList.contains('item-menu')) {
+        toggleMenu();
+    }
+});
