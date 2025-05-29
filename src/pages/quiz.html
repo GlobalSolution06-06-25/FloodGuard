@@ -1,12 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
-    <script src="quiz.html"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FloodGuard</title>
+  <link rel="stylesheet" href="src/css/estilo.css" />
+  <link rel="shortcut icon" href="src/assets/logo.png">
 </head>
 <body>
-    
+  <header>
+    <div class="topo">
+      <img src="src/assets/logo.png" alt="Logo FloodGuard" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="#problema">Problema</a></li>
+          <li><a href="#tecnologias">Tecnologias</a></li>
+          <li><a href="#objetivos">Objetivos</a></li>
+          <li><a href="#publico">Público-Alvo</a></li>
+          <li><a href="#beneficios">Benefícios</a></li>
+          <li><a href="#impacto">Impacto</a></li>
+          <li><a href="src/assets/quiz.html" class="quiz-link">Quiz</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="hamburguer">
+        <span class="barra"></span>
+        <span class="barra"></span>
+        <span class="barra"></span>
+    </div>
+  </header>
+      <main id="container-quiz">
+        <div class="quiz">
+            <h1>Aprenda sobre as enchentes</h1>
+            <section id="container-perguntas">
+                <h2 id="pergunta"></h2>
+                <div id="container-respostas">
+                    <input type="text" id="resposta" placeholder="Digite sua resposta">
+                </div>
+                <button id="proximo">Próxima Pergunta</button>
+                <p id="message"></p>
+            </section>
+            <section id="container-resultado" class="hidden">
+                <h2>Resultado do quiz</h2>
+                <ul id="lista-resultado"></ul>
+                <button id="inicio-btn">Reiniciar</button>
+            </section>
+
+        </div>
+
+    </main>
+  <footer>
+    <p>© 2025 FloodGuard | Projeto Acadêmico FIAP</p>
+  </footer>
+  <script src="./src/js/script.js"></script>
 </body>
 </html>
