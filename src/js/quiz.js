@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded',()=>{
     const listaResultado = document.getElementById('lista-resultado');
     const reiniciarBotao = document.getElementById('inicio-btn')
 
-    //DECLARANDO O ARRAY DE PERGUNTAS
     const questoes=[
         "O que são enchentes e quais são suas principais causas? ",
         "Quais regiões do Brasil são mais afetadas por enchentes e por quê?",
@@ -21,7 +20,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         "O que devemos fazer se a água começar a subir dentro de casa?",
         "É seguro atravessar ruas alagadas a pé ou de carro?",
     ]
-    //DECLARANDOS AS VARIAVEIS
+    
     let perguntas = 0;
     const respostas = [];
 
@@ -73,3 +72,8 @@ document.addEventListener('DOMContentLoaded',()=>{
      mostrarPergunta();
 
 })
+
+//Mudar cor
+function trocar(cor){
+    document.body.style.background=cor
+}

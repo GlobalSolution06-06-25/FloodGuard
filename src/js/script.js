@@ -33,3 +33,8 @@ headerMenu.addEventListener('click', (e) => {
         toggleMenu();
     }
 });
+
+//Mudar cor
+function trocar(cor){
+    document.body.style.background=cor
+}
