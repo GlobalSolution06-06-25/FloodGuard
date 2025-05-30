@@ -77,3 +77,19 @@ document.addEventListener('DOMContentLoaded',()=>{
 function trocar(cor){
     document.body.style.background=cor
 }
+
+//MENU HANBURGUER
+const hamburguer = document.querySelector('.hamburguer');
+const headerMenu = document.querySelector('header nav');
+
+function toggleMenu(){
+    hamburguer.classList.toggle('active');
+    headerMenu.classList.toggle('active');
+}
+
+hamburguer.addEventListener('click', toggleMenu);
+headerMenu.addEventListener('click', (e) => {
+    if (e.target.classList.contains('item-menu')) {
+        toggleMenu();
+    }
+});
